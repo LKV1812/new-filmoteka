@@ -3,6 +3,7 @@
  require 'database.php';
  $link = db_connect();
  require 'models/films.php';
+ require 'function/login-function.php';
 
  if (@$_GET['action'] == 'delete') {
  	

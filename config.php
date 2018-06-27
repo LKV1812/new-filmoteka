@@ -9,4 +9,7 @@ define('HOST', 'http://'.$_SERVER['HTTP_HOST'].'/');
 // в переменную записана корневая директория относительно config.php
 define('ROOT', dirname(__FILE__).'/');
 
+session_start();
+
+
 ?>
