@@ -1,7 +1,7 @@
 <h1>Добавить новый фильм</h1>
 <div class="panel-holder mt-30 mb-40">
   <div class="title-4 mt-0">Добавить фильм</div>
-  <form action="new.php" method="POST">
+  <form enctype="multipart/form-data" action="new.php" method="POST">
 
     <?php  
       for ($i = 0; $i < count($error); $i++) {
@@ -22,6 +22,9 @@
       </div>
     </div>
     <textarea class="textarea mb-20" name="description" placeholder="Введите описание фильма..."></textarea>
+    <div class="mb-20">
+      <input type="file" name="photo">
+    </div>
     <input type="submit" class="button button--submit" href="regular" value="Добавить" name="add-film">
   </form>
 </div>
